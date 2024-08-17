@@ -1,0 +1,155 @@
+/* Footer Styling */
+.footer {
+  background-color: #282828;
+  color: #fff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.footer-logo h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #f06c6c;
+}
+
+.footer-middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #333; /* Ensure background color contrasts with text */
+  border-radius: 8px;
+}
+
+.footer-column h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #f06c6c;
+  border-bottom: 2px solid #f06c6c;
+  padding-bottom: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #f06c6c;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f06c6c;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f06c6c;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #d05252;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+/* Enhanced Contact Us Section Styling */
+.footer-column.contact {
+  padding: 20px;
+  background-color: #333; /* Dark background to make text visible */
+  border-radius: 8px;
+}
+
+.footer-column.contact h2 {
+  color: #f06c6c; /* Highlight heading */
+}
+
+.footer-column.contact p {
+  margin: 10px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #fff; /* White text color for readability */
+}
+
+.footer-column.contact p span {
+  font-weight: bold;
+  color: #f06c6c; /* Optional: Highlight labels with a different color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .footer-column.contact {
+    padding: 15px;
+  }
+}

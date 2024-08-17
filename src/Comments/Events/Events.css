@@ -1,0 +1,238 @@
+/* Events.css */
+
+/* General styles for the container */
+.events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+  }
+  
+  /* Title styles */
+  .events-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Calendar container styles */
+  .calendar-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Calendar styles */
+  .calendar {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Calendar header styles */
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+  
+  .calendar-nav {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .calendar-month {
+    font-weight: bold;
+  }
+  
+  /* Calendar days and dates styles */
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #f1f1f1;
+  }
+  
+  .calendar-day {
+    padding: 10px;
+    text-align: center;
+    background: #eaeaea;
+    border: 1px solid #ddd;
+  }
+  
+  .calendar-date {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .calendar-date:hover {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .event-day {
+    background: #d1e7fd;
+  }
+  
+  /* Events list styles */
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  /* Event card styles */
+  .event-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .event-date {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  .event-description {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  /* Match schedule styles */
+  .match-schedule {
+    margin-top: 20px;
+  }
+  
+  .match-title {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  .match-features {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .match-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .match-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .match-date, .match-time, .match-location {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Medium devices (tablets) */
+  @media (max-width: 768px) {
+    .calendar-container {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .calendar {
+      width: 100%;
+    }
+  
+    .events-list {
+      width: 100%;
+    }
+  
+    .event-card {
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+  
+    .match-features {
+      width: 100%;
+    }
+  }
+  
+  /* Small devices (phones) */
+  @media (max-width: 480px) {
+    .events-title {
+      font-size: 2rem;
+    }
+  
+    .calendar-header {
+      font-size: 1rem;
+    }
+  
+    .calendar-month {
+      font-size: 1rem;
+    }
+  
+    .calendar-day {
+      font-size: 0.9rem;
+    }
+  
+    .calendar-date {
+      font-size: 0.9rem;
+    }
+  
+    .event-title {
+      font-size: 1.5rem;
+    }
+  
+    .event-date {
+      font-size: 1rem;
+    }
+  
+    .event-description {
+      font-size: 0.9rem;
+    }
+  
+    .match-name {
+      font-size: 1.2rem;
+    }
+  
+    .match-date, .match-time, .match-location {
+      font-size: 0.9rem;
+    }
+  }
+  
